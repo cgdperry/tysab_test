@@ -1,0 +1,228 @@
+
+#app-patients.contents {
+
+}
+
+#app-patients.contents h1#title{
+	height:60px;
+}
+
+h1 {
+	font-size:35px !important; /*changed from 32 */
+	line-height:34px !important;
+	letter-spacing:-1px !important;
+}
+
+#app-patients.contents h2 {
+	font-family: "ITCFranklinGothicStd"; 
+	
+}
+
+
+#app-patients.contents #action_container {
+	position:absolute;
+	top:50px;
+	left:10px;
+	width:740px;
+	height:450px;
+}
+
+
+
+#action_container .frame {
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-position:top right;
+}
+
+/* Initial Conditions */
+#action_container #frame_00{
+	background-image:url(../app-patients/images/slide_content_00.png);
+	display:block;
+}
+
+#action_container #frame_01_start{
+	background-image:url(../app-patients/images/slide_content_01_start.png);
+	display:none;
+	opacity:0;
+}
+
+#action_container #frame_02_switch{
+	background-image:url(../app-patients/images/slide_content_02_switch.png);
+	display:none;
+	opacity:0;
+}
+
+#action_container #frame_02_switch #switchpanel {
+	position:absolute;
+	
+	display:block;
+	top:255px;
+	left:130px;
+	height:110px;
+	width:471px;
+}
+
+#action_container #frame_02_switch #switchpanel .button {
+	position:absolute;
+	top:0px;
+	height:25px;
+	cursor:pointer;
+}
+
+#action_container #frame_02_switch #switchpanel .button .arrow {
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:25px;
+	width:25px;
+	background-image:url(../app-patients/images/text_arrow.png);
+	background-repeat:none;
+	background-position:top right;
+}
+
+#action_container #frame_02_switch #switchpanel .button.open .arrow{
+	background-position:top left;
+}
+
+#action_container #frame_02_switch #switchpanel #button_disability {
+	left:0px;
+	width:170px;
+}
+#action_container #frame_02_switch #switchpanel #button_relapse {
+	left:190px;
+	width:110px;
+}
+#action_container #frame_02_switch #switchpanel #button_mri {
+	left:325px;
+	width:100px;
+}
+
+#action_container #frame_02_switch #switchpanel .panel {
+	position:absolute;
+	top:30px;
+	left:0px;
+	height:77px;
+	width:471px;
+	background-position:center top;
+	background-repeat:no-repeat;
+	display:none;
+}
+
+#action_container #frame_02_switch #switchpanel .panel.open {
+	display:block;
+}
+
+#action_container #frame_02_switch #switchpanel #panel_disability {
+	background-image:url(../app-patients/images/slide_content_02_switch_disability.png);
+}
+
+#action_container #frame_02_switch #switchpanel #panel_relapse {
+	background-image:url(../app-patients/images/slide_content_02_switch_relapse.png);
+}
+
+#action_container #frame_02_switch #switchpanel #panel_mri {
+	background-image:url(../app-patients/images/slide_content_02_switch_mri.png);
+}
+
+
+#action_container #frame_03_stay{
+	background-image:url(../app-patients/images/slide_content_03_stay.png);
+	display:none;
+	opacity:0;
+}
+
+
+
+
+
+/* Expandy popup */
+#container #expand_decision, #container #expand_research {
+	/*display:none;
+	opacity:0;*/
+	z-index:3001;
+}
+
+#container footer .expand_info{
+	margin-left:35px;
+	width:640px; /*was 10/ 740*/
+	border-bottom:none;
+	border-top:1px solid #666666;
+}
+
+#container footer .expand_info.collapsed{
+	margin-bottom:50px;
+	height:auto;
+}
+
+#container footer .expand_info.expanded{
+	margin-bottom:50px;
+	height:460px;
+}
+
+#container footer .expand_info.expanded .info_contents {
+	height:460px;
+	width:653px;
+	background-image:url(../app-patients/images/popup.png);
+	background-position:22px 45px;
+	background-repeat:no-repeat;
+	background-color:#FFFFFF;
+	margin-bottom:0px;
+}
+
+#container footer .expand_info .info_contents h4{
+	font-size:85%;
+	color:#404040;
+}
+
+#container footer .expand_info.expanded .info_contents span.subtitle {
+	display:inline;
+}
+
+#container footer .expand_info.collapsed .info_contents {
+	height:22px;
+}
+
+#container footer .expand_info.collapsed .info_contents span.subtitle {
+	display:none;
+}
+
+
+.over {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#icon_stack {
+	display:none;}
+	
+	#indication{width:700px; padding-left:30px; padding-top:310px; }
+	#indication h3 {
+    color: #0096db;
+    font: bold 18px ITCFranklinGothicStd, arial, sans-serif;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+}
+
+#indication span{
+margin-top:-15px;
+color: #333333;
+    font: 17px ITCFranklinGothicStd, arial, sans-serif;
+    line-height: 19px;
+    display: block;	
+}
+
+.subtitle{
+	position:relative;
+	background-repeat:no-repeat;
+	background-position:left center;
+	width:716px;
+	height:24px;
+	margin-left: 40px;
+	z-index:1000;
+}

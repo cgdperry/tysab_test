@@ -1,0 +1,236 @@
+/* Old Cube References Before 08 2013 revisions */
+/**
+ * Cube Animation Styles
+ */
+#app-patients.contents {
+    background: #fff url('../images/app-patients-bg.jpg') no-repeat left 15px scroll;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#app-patients.contents footer .statement {
+    width: 619px;
+}
+
+
+
+
+#viewport
+{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	-webkit-perspective: 1000;
+	-webkit-perspective-origin: 50% 50%;
+	-webkit-transform: scale(0.8,0.8);
+}
+
+.cube
+{
+	position: relative;
+	margin: 0 auto;
+	width: 280px;
+	height: 280px;
+    
+	-webkit-transition-property: background, -webkit-transform;
+	-webkit-transition-duration: 1s, 1s;
+	-webkit-transition-timing-function: ease-out, ease-out;
+	transition-property: background, -webkit-transform;
+	transition-duration: 1s, 1s;
+	transition-timing-function: ease-out, ease-out;
+    
+	-webkit-transform-style: preserve-3d;
+}
+
+.cube .side
+{
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	border: 1px solid rgba(0,0,0,0.1);
+	-webkit-transform-style: preserve-3d;
+    
+    font: 55px ITCFranklinGothicStd, "Arial Narrow",arial;
+    color: #0298d8;
+    text-align: center;
+    line-height: 50px;
+    
+    background-color: rgba(255,213,49,0.2) ;
+}
+
+.cube .side .over.text {
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-orient:horizontal;
+    box-pack:center;
+    box-align:center;
+}
+.cube .side1, .cube .side2, .cube .side3  {
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image:   -webkit-gradient(radial, left top, 0, left top, 280, color-stop(0, rgba(256,256,256,0.0)), color-stop(0.7, rgba(256,256,256,0.0)), color-stop(0.71, rgba(256,256,256,0.3)), color-stop(0.85, rgba(256,256,256,0.0)), color-stop(1, rgba(256,256,256,0.0))), 
+                        -webkit-gradient(radial, center center, 0, center center, 140, color-stop(0, rgba(254,223,127,0.0)), color-stop(0.5, rgba(254,223,127,0.0)), color-stop(1, rgba(254,223,127,1.0))), 
+                        -webkit-gradient(linear, left top, left bottom, color-stop(40%,rgba(248,132,37,0)), color-stop(100%,rgba(248,132,37,0.2)));
+    /* Webkit (Chrome 11+) */ 
+    background-image:   -webkit-radial-gradient(left top, circle farthest-corner, rgba(256,256,256,0.0) 0%, rgba(256,256,256,0.0) 70%, rgba(256,256,256,0.3) 71%, rgba(256,256,256,0.0) 85%, rgba(256,256,256,0.0) 100%), 
+                        -webkit-radial-gradient(center center, circle farthest-corner, rgba(254,223,127,0.0) 50%, rgba(254,223,127,1) 100%), 
+                        -webkit-linear-gradient(top, rgba(248,132,37,0) 40%,rgba(248,132,37,0.2) 100%);
+    /* Proposed W3C Markup */ 
+    background-image:   radial-gradient(left top, circle farthest-corner, rgba(256,256,256,0.0) 0%, rgba(256,256,256,0.0) 70%, rgba(256,256,256,0.3) 71%, rgba(256,256,256,0.0) 85%, rgba(256,256,256,0.0) 100%), 
+                        radial-gradient(center center, circle farthest-corner, rgba(254,223,127,0.0) 50%, rgba(254,223,127,1) 100%), 
+                        linear-gradient(top, rgba(248,132,37,0) 40%,rgba(248,132,37,0.2) 100%);
+}
+
+.cube .side1 .over.highlight, .cube .side2 .over.highlight, .cube .side3 .over.highlight  {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+    
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image:   -webkit-gradient(radial, right top, 0, right top, 280, color-stop(0, rgba(256,256,256,0.0)), color-stop(0.75, rgba(256,256,256,0.0)), color-stop(1, rgba(256,256,256,0.5)));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image:   -webkit-radial-gradient(right top, circle farthest-corner, rgba(256,256,256,0.0) 0%, rgba(256,256,256,0.0) 75%, rgba(256,256,256,0.5) 100%);
+
+    /* Proposed W3C Markup */ 
+    background-image:   radial-gradient(right top, circle farthest-corner, rgba(256,256,256,0.0) 0%, rgba(256,256,256,0.0) 75%, rgba(256,256,256,0.5) 100%);
+}
+
+.cube .side1 .over.linear_color, .cube .side2 .over.linear_color, .cube .side3 .over.linear_color  {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image:   -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,208,54,0.3)), color-stop(100%,rgba(247,149,37,0.3)));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image:   -webkit-linear-gradient(top, rgba(255,208,54,0.3) 0%,rgba(247,149,37,0.3) 100%);
+
+    /* Proposed W3C Markup */ 
+    background-image:   linear-gradient(top, rgba(255,208,54,0.3) 0%,rgba(247,149,37,0.3) 100%);
+}
+.state-2 .cube .side1 .over.linear_color, .state-2 .cube .side2 .over.linear_color {
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image:   -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,208,54,0.3)), color-stop(100%,rgba(247,149,37,0.3)));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image:   -webkit-linear-gradient(left, rgba(255,208,54,0.3) 0%,rgba(247,149,37,0.3) 100%);
+
+    /* Proposed W3C Markup */ 
+    background-image:   linear-gradient(left, rgba(255,208,54,0.3) 0%,rgba(247,149,37,0.3) 100%);
+}
+.state-3 .cube .side1 .over.linear_color {
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image:   -webkit-gradient(linear, left bottom, left top, color-stop(0%,rgba(255,208,54,0.3)), color-stop(100%,rgba(247,149,37,0.3)));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image:   -webkit-linear-gradient(bottom, rgba(255,208,54,0.3) 0%,rgba(247,149,37,0.3) 100%);
+
+    /* Proposed W3C Markup */ 
+    background-image:   linear-gradient(bottom, rgba(255,208,54,0.3) 0%,rgba(247,149,37,0.3) 100%);
+}
+.state-3 .cube .side3 .over.linear_color {
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image:   -webkit-gradient(linear, right top, left top, color-stop(0%,rgba(255,208,54,0.3)), color-stop(100%,rgba(247,149,37,0.3)));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image:   -webkit-linear-gradient(right, rgba(255,208,54,0.3) 0%,rgba(247,149,37,0.3) 100%);
+
+    /* Proposed W3C Markup */ 
+    background-image:   linear-gradient(right, rgba(255,208,54,0.3) 0%,rgba(247,149,37,0.3) 100%);
+}
+
+.cube .side1 { -webkit-transform: translate3d(0px, 0px, 0px) rotate3d(0, 0, 0, 0deg);}
+.cube .side2 { -webkit-transform: translate3d(0px, 140px, -140px) rotate3d(-1, 0, 0, 90deg); }
+.cube .side3 { -webkit-transform: rotateX(-90deg) translate3d(-140px, 140px, 0px) rotate3d(0, -0.5, 0, 90deg); }
+.cube .side4 { -webkit-transform: translate3d(140px, 0px, -140px) rotate3d(0, 1, 0, 90deg); }
+.cube .side5 { -webkit-transform: translate3d(0px, -140px, -140px) rotate3d(1, 0, 0, 90deg); }
+.cube .side6 { -webkit-transform: translate3d(0px, 0px, -280px) rotate3d(0, 0, 0, 90deg); }
+
+.state-0 .cube { -webkit-transform: translate3d(19px, -74px, 85px) rotate3d(1, 0.4, -0.8, 60deg); }
+.state-2 .cube { -webkit-transform: translate3d(19px, 29px, 85px) rotate3d(0.6, 0.7, 0.1, 22deg); }
+.state-3 .cube { -webkit-transform: translate3d(19px, -110px, 85px) rotate3d(0.7, 0.5, -0.7, 103deg); }
+.state-1 .cube { -webkit-transform: translate3d(0px, -128px, 85px) rotate3d(0.6, 0.1, -0.1, 74deg); }
+
+.over {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+aside p {
+	position: absolute;
+	top: 160px; 
+    left: 400px;
+	width: 350px;
+	font-size: 24px;
+    line-height: 24px;
+	font-family: ITCFranklinGothicStd, HelveticaNeue-CondensedBold, "Arial Narrow",arial;
+}
+
+.state-0 .cube .side1 .over.highlight, .state-1 .cube .side1 .over.highlight, .state-2 .cube .side3 .over.highlight, .state-3 .cube .side2 .over.highlight  {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+}
+
+.state-2 .cube .side1 .over.linear_color, .state-3 .cube .side1 .over.linear_color,
+.state-0 .cube .side2 .over.linear_color, .state-1 .cube .side2 .over.linear_color, .state-2 .cube .side2 .over.linear_color,
+.state-0 .cube .side3 .over.linear_color, .state-1 .cube .side3 .over.linear_color, .state-3 .cube .side3 .over.linear_color {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+}
+
+.state-0 .aside1, .state-0 .aside2, .state-0 .aside3,
+                  .state-1 .aside2, .state-1 .aside3,
+.state-2 .aside1,                   .state-2 .aside3,
+.state-3 .aside1, .state-3 .aside2                                      { 
+    opacity: 0; 
+    -webkit-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
+}
+
+.state-1 .aside1, .state-2 .aside2, .state-3 .aside3 { 
+    opacity: 1; 
+    -webkit-transition: opacity 0.5s ease-in 0.5s;
+    transition: opacity 0.5s ease-in 0.5s;
+}
+
+
+.sub-page-button{
+	display:block;
+	width:98px;
+	height:34px;
+	
+	position:abolute;
+	margin-left:645px;	
+}
+.sub-page-button a{
+	display:block;
+	width:98px;
+	height:34px;
+	
+background:url(../images/MOAbutton.png) no-repeat 0 0;
+}
+
+#icon_stack {
+	display:none;}
+
+/*
+.mark { position: absolute; top: 0; left: 0; width: 5px; height: 5px; background: #F0F; z-index: 3000; }
+
+#mark1 { top: 243px; left: 110px; }
+#mark2 { top: 266px; left: 340px; }
+#mark3 { top: 490px; left: 106px; }
+#mark4 { top: 495px; left: 348px; }
+#mark5 { top: 320px; left:  83px; }
+#mark6 { top: 511px; left:  78px; }
+#mark7 { top: 516px; left: 275px; }
+*/

@@ -1,0 +1,89 @@
+
+#patient-support.contents {
+
+}
+
+.chart_area{
+	position:absolute;
+	top:0px;
+	left:40px;
+	width:693px;
+	height:554px;
+	background-color:#FFFFFF;
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+
+#patient-support.contents #chart00 {
+	background-image:url(../patient-support/images/state_00.png);
+	transition: opacity 200ms;
+	-webkit-transition: opacity 200ms;
+}
+#patient-support.contents #chart01 {
+	background-image:url(../patient-support/images/state_01.png);
+	transition: opacity 200ms;
+	-webkit-transition: opacity 200ms;
+}
+#patient-support.contents #chart02 {
+	background-image:url(../patient-support/images/state_02.png);
+	transition: opacity 200ms;
+	-webkit-transition: opacity 200ms;
+}
+#patient-support.contents #chart03 {
+	background-image:url(../patient-support/images/state_03.png);
+	transition: opacity 200ms;
+	-webkit-transition: opacity 200ms;
+}
+#patient-support.contents #chart04 {
+	background-image:url(../patient-support/images/state_04.png);
+	transition: opacity 200ms;
+	-webkit-transition: opacity 200ms;
+}
+
+/* These are layered up to allow crossfading and prevent flashing */
+
+/* state 0 */
+#patient-support.contents.state-0 #chart00 { opacity:1; }
+#patient-support.contents.state-0 #chart01 { opacity:0; }
+#patient-support.contents.state-0 #chart02 { opacity:0; }
+#patient-support.contents.state-0 #chart03 { opacity:0; }
+#patient-support.contents.state-0 #chart04 { opacity:0; }
+
+/* state 1 */
+#patient-support.contents.state-1 #chart00 { opacity:1; }
+#patient-support.contents.state-1 #chart01 { opacity:1; }
+#patient-support.contents.state-1 #chart02 { opacity:0; }
+#patient-support.contents.state-1 #chart03 { opacity:0; }
+#patient-support.contents.state-1 #chart04 { opacity:0; }
+
+/* state 2 */
+#patient-support.contents.state-2 #chart00 { opacity:1; }
+#patient-support.contents.state-2 #chart01 { opacity:1; }
+#patient-support.contents.state-2 #chart02 { opacity:1; }
+#patient-support.contents.state-2 #chart03 { opacity:0; }
+#patient-support.contents.state-2 #chart04 { opacity:0; }
+
+/* state 3 */
+#patient-support.contents.state-3 #chart00 { opacity:1; }
+#patient-support.contents.state-3 #chart01 { opacity:1; }
+#patient-support.contents.state-3 #chart02 { opacity:1; }
+#patient-support.contents.state-3 #chart03 { opacity:1; }
+#patient-support.contents.state-3 #chart04 { opacity:0; }
+
+/* state 4 */
+#patient-support.contents.state-4 #chart00 { opacity:1; }
+#patient-support.contents.state-4 #chart01 { opacity:1; }
+#patient-support.contents.state-4 #chart02 { opacity:1; }
+#patient-support.contents.state-4 #chart03 { opacity:1; }
+#patient-support.contents.state-4 #chart04 { opacity:1; }
+
+.over {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#icon_stack {
+	display:none;}

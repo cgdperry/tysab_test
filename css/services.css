@@ -1,0 +1,206 @@
+﻿#patient-services .bubble {
+	z-index:30;
+    width: 153px;
+    height: 43px;
+    background-color: #ffe798;
+    border: 2px solid #f8a15b;
+    border-radius: 8px;
+    font: bold 18px ITCFranklinGothicStd, arial, sans-serif;
+    line-height: 18px;
+    color: #7f734c;
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.23);
+    
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-orient:horizontal;
+    box-pack:center;
+    box-align:center;
+    
+}
+#patient-services .bubble.active {
+    border: 2px solid #0095cc;
+    color: #0095cc;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffedbe), color-stop(24%,#ffe7a8), color-stop(40%,#ffdd83), color-stop(100%,#fec857)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffedbe 0%,#ffe7a8 24%,#ffdd83 40%,#fec857 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom, #ffedbe 0%,#ffe7a8 24%,#ffdd83 40%,#fec857 100%); /* W3C */
+}
+
+#patient-services .bubble.inactive.tapped {
+    color: #7fc1b9;
+}
+#patient-services .line {
+	display:none;
+    border-top: 2px solid transparent;
+    background-color: #fbcda8;
+    width: 75px;
+    height: 1px;
+    position: absolute;
+    -webkit-background-clip:padding-box; /* IOS fix */
+    background-clip:padding-box; /* IOS fix */
+    -webkit-backface-visibility: hidden;
+}
+#patient-services .line.active {
+    background-color: #0095cc;
+    height: 4px;
+}
+#patient-services #aa1 {
+    top: 327px;
+    left: 73px;
+}
+#patient-services #aa2 {
+    top: 220px;
+    left: 40px;
+}
+#patient-services #aa3 {
+    top: 108px;
+    left: 72px;
+}
+#patient-services #aa4 {
+    top: 73px;
+    left: 295px;
+}
+#patient-services #aa5 {
+    top: 108px;
+    left: 520px;
+}
+#patient-services #aa6 {
+    top: 220px;
+    left: 545px;
+}
+#patient-services #aa7 {
+    top: 327px;
+    left: 521px;
+}
+#patient-services #aa {
+	z-index:40;
+    position: absolute;
+    left: 265px;
+    top: 196px;
+}
+#patient-services #ps-line1 {
+    -webkit-transform: rotate3d(0,0,1,-39deg);
+    top: 304px;
+    left: 223px;
+}
+#patient-services #ps-line2 {
+    top: 248px;
+    left: 200px;
+}
+#patient-services #ps-line3 {
+    -webkit-transform: rotate3d(0,0,1,45deg);
+    top: 187px;
+    left: 216px;
+}
+#patient-services #ps-line4 {
+    -webkit-transform: rotate3d(0,0,1,90deg);
+    top: 165px;
+    left: 342px;
+}
+#patient-services #ps-line5 {
+    -webkit-transform: rotate3d(0,0,1,-42deg);
+    top: 183px;
+    left: 461px;
+}
+#patient-services #ps-line6 {
+    top: 248px;
+    left: 475px;
+}
+#ps-line7 {
+    -webkit-transform: rotate3d(0,0,1,34deg);
+    top: 308px;
+    left: 466px;
+}
+#patient-services .comment_holder {
+	z-index:30;
+    position: absolute;
+    overflow: hidden;
+    top: 288px;
+    left: 266px;
+    width: 210px;
+    height: 170px;
+	margin-top:10px;
+}
+#patient-services .comment_holder div {
+    position: absolute;
+    bottom: 175px;
+    height: 135px;
+    padding: 0px 14px;
+    /* opacity: 0; */
+    font: bold 17px ITCFranklinGothicStd,"Arial Narrow",arial;
+    color: #323131;
+    text-align: center;
+/*     -webkit-transition-property:opacity, bottom;
+    -webkit-transition-duration:1.0s, 1.0s;
+    -webkit-transition-delay:0.0s, 0.0s;
+    -webkit-transition-timing-function:ease-out, ease-out;
+    transition-property:opacity, bottom;
+    transition-duration:1.0s, 1.0s;
+    transition-delay:0.0s, 0.0s;
+    transition-timing-function:ease-out, ease-out; */
+    -webkit-transition-property: bottom;
+    -webkit-transition-duration: 1.0s;
+    -webkit-transition-delay: 0.0s;
+    -webkit-transition-timing-function: ease-out;
+    transition-property: bottom;
+    transition-duration: 1.0s;
+    transition-delay: 0.0s;
+    transition-timing-function: ease-out;
+}
+
+#patient-services #chart-bg{
+	z-index:10;
+	width:362px; height:245px; display:block; overflow:hidden; background-repeat: no-repeat;background-image:url(../images/activebg_sprite.jpg);	top: 130px;
+left: 195px; position:absolute;
+}
+
+#patient-services #chart-bg.aa {background-position: -366px -496px}
+#patient-services #chart-bg.aa1 {background-position: -366px -249px}
+#patient-services #chart-bg.aa2 {background-position: -2px -743px}
+#patient-services #chart-bg.aa3 {background-position: -2px -496px}
+#patient-services #chart-bg.aa4 {background-position: -2px -249px}
+#patient-services #chart-bg.aa5 {background-position: -366px -2px}
+#patient-services #chart-bg.aa6 {background-position: -2px -2px}
+#patient-services #chart-bg.aa7 {background-position: -366px -743px}
+
+.chart-active{
+	display: block;
+
+height: 500px;
+z-index:-1;
+
+}
+#patient-services .comment_holder div.c2 {
+	padding-left: 47px; 
+    text-align: center;
+}
+#patient-services .comment_holder div.c5 {
+	padding: 0 5px;
+}
+#patient-services .comment_holder div.show {
+    bottom: 0px;
+    opacity: 1;
+/*     -webkit-transition-delay: 0.2s, 0.2s;
+    transition-delay: 0.2s, 0.2s; */
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.additional_information_button{
+	position:absolute;
+	top:425px;
+	left:15px;
+	width:135px;
+	height:42px;
+	background-image:url(../images/additional_information_button.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+}

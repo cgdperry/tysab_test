@@ -1,0 +1,20 @@
+#pres_scroller {
+    width: 998px;
+    height: 100%;
+}
+.welcome #container{
+    }
+.welcome .content_body img{
+    position:absolute;
+    top:0;
+    }
+.welcome #isi{
+    background-color:#fff;
+    }
+ /* Override base styles */
+.welcome #container .content_body{
+    -webkit-perspective:0;
+    -webkit-perspective-origin-x:0;
+    -webkit-perspective-origin-y:0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }

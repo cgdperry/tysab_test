@@ -1,0 +1,307 @@
+#msas #canvas_holder {
+    position: absolute;
+    top: 117px;
+    left: 256px;
+    z-index: 2;
+}
+#msas #can_text {
+    position: absolute;
+    top: 115px;
+    font: 18px ITCFranklinGothicStd, "Arial Narrow", arial, sans-serif;
+    color: #636667;
+    text-align: center;
+    width: 199px;
+    padding: 0px 5px;
+    line-height: 20px;
+}
+#msas .msas-item {
+    width: 160px;
+    position: absolute;
+    font: 16px ITCFranklinGothicStd, "Arial Narrow", arial, sans-serif;
+    opacity: 1;
+/*     -webkit-transition-property: opacity, -webkit-transform;
+    -webkit-transition-duration: 1.0s, 1.0s;
+    -webkit-transition-timing-function: ease-in, ease-out;
+    transition-property: opacity, -webkit-transform;
+    transition-duration: 1.0s, 1.0s;
+    transition-timing-function: ease-in, ease-out; */
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1.0s;
+    -webkit-transition-timing-function: ease-out;
+    transition-property: -webkit-transform;
+    transition-duration: 1.0s;
+    transition-timing-function: ease-out;
+}
+/* #msas.init .msas-item {
+    opacity: 0;
+} */
+#msas #msas1 {
+    left: 57px;
+    top: 90px;
+    height: 116px;
+}
+#msas.init #msas1 {
+    -webkit-transform: translate3d(215px,50px,0px);
+}
+
+#msas #msas1 .coin{
+    background: url("../images/active_sprite.png") 0px 0px,
+                -webkit-radial-gradient(18px 18px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(206,114,58,1) 50%,rgba(206,114,58,1) 100%),
+                -webkit-radial-gradient(21px 21px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(253,210,177,1) 50%,rgba(253,210,177,1) 100%),
+                #f9a25e;
+}
+#msas #msas1 .coin .coin_label{
+    background: transparent url("../images/active_sprite.png") no-repeat scroll 0px 0px;
+}
+#msas #msas1.inactive .coin {
+    background: url("../images/active_sprite.png") -660px 0px,
+                -webkit-radial-gradient(18px 18px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(147,148,148,1) 50%,rgba(147,148,148,1) 100%),
+                -webkit-radial-gradient(21px 21px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(219,220,220,1) 50%,rgba(219,220,220,1) 100%),
+                #b4b5b5;
+}
+#msas #msas1.inactive .coin .coin_label{
+    background-position: -660px 0px;
+}
+#msas #msas2 {
+    left: 57px;
+    top: 305px;
+    height: 135px;
+}
+#msas.init #msas2 {
+    -webkit-transform: translate3d(215px,-50px,0px);
+}
+#msas #msas2 .coin{
+    background: url("../images/active_sprite.png") -165px 0px,
+                -webkit-radial-gradient(18px 18px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(206,114,58,1) 50%,rgba(206,114,58,1) 100%),
+                -webkit-radial-gradient(21px 21px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(253,210,177,1) 50%,rgba(253,210,177,1) 100%),
+                #f9a25e;
+}
+#msas #msas2 .coin .coin_label {
+    background: transparent url("../images/active_sprite.png") no-repeat scroll -165px 0px;
+}
+#msas #msas2.inactive .coin {
+    background: url("../images/active_sprite.png") -825px 0px,
+                -webkit-radial-gradient(18px 18px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(147,148,148,1) 50%,rgba(147,148,148,1) 100%),
+                -webkit-radial-gradient(21px 21px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(219,220,220,1) 50%,rgba(219,220,220,1) 100%),
+                #b4b5b5;
+}
+#msas #msas2.inactive .coin .coin_label{
+    background-position: -825px 0px;
+}
+#msas #msas3 {
+    left: 534px;
+    top: 90px;
+    height: 135px;
+}
+#msas.init #msas3 {
+    -webkit-transform: translate3d(-215px,50px,0px);
+}
+#msas #msas3 .coin{
+    background: url("../images/active_sprite.png") -329px 0px,
+                -webkit-radial-gradient(18px 18px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(206,114,58,1) 50%,rgba(206,114,58,1) 100%),
+                -webkit-radial-gradient(21px 21px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(253,210,177,1) 50%,rgba(253,210,177,1) 100%),
+                #f9a25e;
+}
+#msas #msas3 .coin .coin_label {
+    background: transparent url("../images/active_sprite.png") no-repeat scroll -329px 0px;
+}
+#msas #msas3.inactive .coin {
+    background: url("../images/active_sprite.png") -990px 0px,
+                -webkit-radial-gradient(18px 18px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(147,148,148,1) 50%,rgba(147,148,148,1) 100%),
+                -webkit-radial-gradient(21px 21px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(219,220,220,1) 50%,rgba(219,220,220,1) 100%),
+                #b4b5b5;
+}
+#msas #msas3.inactive .coin .coin_label{
+    background-position: -990px 0px;
+}
+#msas #msas4 {
+    left: 534px;
+    top: 305px;
+    height: 135px;
+}
+#msas.init #msas4 {
+    -webkit-transform: translate3d(-215px,-50px,0px);
+}
+#msas #msas4 .coin{
+    background: url("../images/active_sprite.png") -494px 0px,
+                -webkit-radial-gradient(18px 18px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(206,114,58,1) 50%,rgba(206,114,58,1) 100%),
+                -webkit-radial-gradient(21px 21px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(253,210,177,1) 50%,rgba(253,210,177,1) 100%),
+                #f9a25e;
+}
+#msas #msas4 .coin .coin_label {
+    background: transparent url("../images/active_sprite.png") no-repeat scroll -494px 0px;
+}
+#msas #msas4.inactive .coin {
+    background: url("../images/active_sprite.png") -1155px 0px,
+                -webkit-radial-gradient(18px 18px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(147,148,148,1) 50%,rgba(147,148,148,1) 100%),
+                -webkit-radial-gradient(21px 21px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(219,220,220,1) 50%,rgba(219,220,220,1) 100%),
+                #b4b5b5;
+}
+#msas #msas4.inactive .coin .coin_label{
+    background-position: -1155px 0px;
+}
+#msas .coin_label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 165px;
+    overflow: visible;
+}
+#msas .coin_container {
+    height: 58px;
+}
+#msas .coin {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 39px;
+    width: 39px;
+    border-radius: 20px;
+    overflow: visible;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(55%, transparent), color-stop(56%, rgba(255, 255, 255, 0.01)), color-stop(86%, rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
+    background: -webkit-gradient(radial, 18px 18px, 0px, 19px 19px, 40px, color-stop(0%,rgba(249,162,94,0)), color-stop(47%,rgba(249,162,94,0)), color-stop(50%,rgba(206,114,58,1)), color-stop(100%,rgba(206,114,58,1))),
+                -webkit-gradient(radial, 21px 21px, 0px, 21px 21px, 40px, color-stop(0%,rgba(249,162,94,0)), color-stop(47%,rgba(249,162,94,0)), color-stop(50%,rgba(253,210,177,1)), color-stop(100%,rgba(253,210,177,1))),
+                #f9a25e; /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(18px 18px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(206,114,58,1) 50%,rgba(206,114,58,1) 100%),
+                -webkit-radial-gradient(21px 21px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(253,210,177,1) 50%,rgba(253,210,177,1) 100%),
+                #f9a25e; /* Chrome10+,Safari5.1+ */
+    background: radial-gradient(18px 18px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(206,114,58,1) 50%,rgba(206,114,58,1) 100%),
+                radial-gradient(21px 21px, 40px 40px, rgba(249,162,94,0) 0%,rgba(249,162,94,0) 47%,rgba(253,210,177,1) 50%,rgba(253,210,177,1) 100%),
+                #f9a25e; /* W3C */
+
+}
+#msas .inactive .coin {
+    background: -webkit-gradient(radial, 18px 18px, 0px, 19px 19px, 40px, color-stop(0%,rgba(180,181,181,0)), color-stop(47%,rgba(180,181,181,0)), color-stop(50%,rgba(147,148,148,1)), color-stop(100%,rgba(147,148,148,1))),
+                -webkit-gradient(radial, 21px 21px, 0px, 21px 21px, 40px, color-stop(0%,rgba(180,181,181,0)), color-stop(47%,rgba(180,181,181,0)), color-stop(50%,rgba(219,220,220,1)), color-stop(100%,rgba(219,220,220,1))),
+                #b4b5b5; /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(18px 18px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(147,148,148,1) 50%,rgba(147,148,148,1) 100%),
+                -webkit-radial-gradient(21px 21px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(219,220,220,1) 50%,rgba(219,220,220,1) 100%),
+                #b4b5b5; /* Chrome10+,Safari5.1+ */
+    background: radial-gradient(18px 18px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(147,148,148,1) 50%,rgba(147,148,148,1) 100%),
+                radial-gradient(21px 21px, 40px 40px, rgba(180,181,181,0) 0%,rgba(180,181,181,0) 47%,rgba(219,220,220,1) 50%,rgba(219,220,220,1) 100%),
+                #b4b5b5; /* W3C */
+
+}
+#msas .msas-item ul{
+    margin: 0px;
+    padding-left: 16px;
+    color: #e4893f;
+}
+#msas .msas-item ul li span{
+    color: #636667;
+}
+#msas .line {
+    border-top: 2px solid transparent;
+    background-color: #6fc7ea;
+    width: 75px;
+    height: 1px;
+    position: absolute;
+    -webkit-background-clip:padding-box; /* IOS fix */
+    background-clip:padding-box; /* IOS fix */
+    -webkit-backface-visibility: hidden;
+    opacity: 1;
+/*     -webkit-transition-property: opacity, -webkit-transform;
+    -webkit-transition-duration: 1.0s, 1.0s;
+    -webkit-transition-timing-function: ease-in, ease-out;
+    transition-property: opacity, height;
+    transition-duration: 1.0s, 1.0s;
+    transition-timing-function: ease-in, ease-out; */
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1.0s;
+    -webkit-transition-timing-function: ease-out;
+    transition-property: height;
+    transition-duration: 1.0s;
+    transition-timing-function: ease-out;
+}
+/* #msas.init .line {
+    opacity: 0;
+} */
+#msas .line.active {
+    background-color: #0095cc;
+    height: 4px;
+}
+#msas #msas-line1 {
+    -webkit-transform: rotate3d(0,0,1,30deg);
+    top: 145px;
+    left: 200px;
+    z-index: 1;
+}
+#msas.init #msas-line1 {
+    -webkit-transform: translate3d(75px,10px,0px) rotate3d(0,0,1,30deg);
+}
+#msas #msas-line2 {
+    -webkit-transform: rotate3d(0,0,1,-30deg);
+    top: 287px;
+    left: 200px;
+}
+#msas.init #msas-line2 {
+    -webkit-transform: translate3d(75px,-10px,0px) rotate3d(0,0,1,-30deg);
+}
+#msas #msas-line3 {
+    -webkit-transform: rotate3d(0,0,1,150deg);
+    top: 145px;
+    left: 455px;
+}
+#msas.init #msas-line3 {
+    -webkit-transform: translate3d(-75px,10px,0px) rotate3d(0,0,1,30deg);
+}
+#msas #msas-line4 {
+    -webkit-transform: rotate3d(0,0,1,-150deg);
+    top: 287px;
+    left: 455px;
+}
+#msas.init #msas-line4 {
+    -webkit-transform: translate3d(-75px,-10px,0px) rotate3d(0,0,1,-150deg);
+}
+#msas .comment_holder {
+    position: absolute;
+    padding-top: 20px;
+    top: 38px;
+    overflow: hidden;
+    height: 0;
+    width: 165px;
+/*     opacity: 0;
+    -webkit-transition-property: opacity, height;
+    -webkit-transition-duration: 1.0s, 1.0s;
+    -webkit-transition-timing-function: ease-in, ease-out;
+    transition-property: opacity, height;
+    transition-duration: 1.0s, 1.0s;
+    transition-timing-function: ease-in, ease-out; */
+    opacity: 1;
+    -webkit-transition-property: height;
+    -webkit-transition-duration: 1.0s;
+    -webkit-transition-timing-function: ease-out;
+    transition-property: height;
+    transition-duration: 1.0s;
+    transition-timing-function: ease-out;
+}
+#msas .comment_holder:after {
+    content: " ";
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(256,256,256,1)), color-stop(100%,rgba(256,256,256,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(256,256,256,1) 0%,rgba(256,256,256,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, rgba(256,256,256,1) 0%,rgba(256,256,256,0) 100%); /* W3C */
+    width: 100%;
+    height: 20px;
+    top: 0px;
+    left: 0px;
+}
+#msas .comment_holder ul {
+    position: absolute;
+    bottom: 15px;
+    padding-bottom: 0px;
+}
+#msas .active .comment_holder {
+    opacity: 1;
+    height: 150px;
+}
+#msas #msas1.active .comment_holder {
+	width: 170px;
+}
+#msas #msas4.active .comment_holder{
+	height: 165px;
+}
+#msas .active .comment_holder ul li {
+	padding-top: 5px;
+}

@@ -1,0 +1,467 @@
+(function ($) { /* closure and portability */
+    $(document).ready(function(){
+
+		/* app-patients forward */
+		$("#app-patients").click(function(){
+			
+			// stops clicks from doing anything if we've hit the end. Don't repeat.
+			if(last_state < total_states) {
+			
+				if(cur_state == 1){
+					
+					$("#pyramid-foreground .top").animate({
+						opacity:0,
+ 						left: '120px',
+						top:'5px'
+						}, 500, 'easeOutSine', function() {		
+					});
+					
+					$("#pyramid-foreground .middle").animate({
+						opacity:0,
+ 						left: '155px',
+						top:'160px'
+						}, 500, 'easeOutSine', function() {		
+					});
+					
+					$("#pyramid-foreground .bottom").animate({
+						opacity:0
+						}, 500, 'easeOutSine', function() {	
+						
+						$("#pyramid").animate({
+							opacity:1,
+							top:'-30px'
+							}, 500, 'easeOutCubic', function() {	
+								
+						});
+							
+					});
+					
+					$("#text00").animate({
+						opacity:0,
+ 						left: '455px'
+						}, 500, 'easeOutSine', function() {
+							$("#text00").css({ display:'none' });
+							$("#text02").css({ display:'block' });
+							$("#text02").animate({
+								opacity:0.3,
+								}, 400, 'easeOutSine', function() {		
+							});
+					});
+					
+				}
+				else if(cur_state == 2){
+
+					$("#pyramid .state01").delay(100).animate({
+						opacity:0
+						}, 300, 'easeOutCubic', function() {
+							
+					});
+	
+					$("#pyramid .state02").animate({
+						opacity:1
+						}, 300, 'easeOutCubic', function() {
+					});
+					
+					//$("#text02").css({ display:'block' });
+					$("#text02").animate({
+						opacity:1,
+						}, 400, 'easeOutSine', function() {		
+					});
+
+				}
+				else if(cur_state == 3){
+
+					$("#pyramid .state02").delay(100).animate({
+						opacity:0
+						}, 300, 'easeOutCubic', function() {
+							
+					});
+			
+					$("#pyramid .state03").animate({
+						opacity:1
+						}, 300, 'easeOutCubic', function() {
+
+					});
+					
+					$("#title").animate({
+						opacity:0
+						}, 100, 'easeOutCubic', function() {
+						
+						$("#title").html("<span style=\"font-size:87%;\">TYSABRI CAN BE PRESCRIBED FOR JCV ANTIBODY<br /> NEGATIVE PATIENTS FROM THE START</span>");
+						$("#title").animate({
+							opacity:1
+							}, 300, 'easeOutCubic', function() {
+						});
+							
+					});
+					
+					$("#text02").animate({
+						opacity:0,
+						}, 100, 'easeOutSine', function() {	
+						$("#text02").css({ display:'none' });	
+					});
+					
+					$("#text03").css({ display:'block' });
+					$("#text03").animate({
+						opacity:1,
+						}, 300, 'easeOutSine', function() {		
+					});
+				
+				}
+				else if(cur_state == 4){
+					
+					$("#pyramid .state03").delay(100).animate({
+						opacity:0
+						}, 300, 'easeOutCubic', function() {
+							
+					});
+					
+					$("#pyramid .state04").animate({
+						opacity:1
+						}, 300, 'easeOutCubic', function() {
+
+					});
+					
+					
+					$("#expand_pml").css({ display:'block' });
+					$("#expand_pml").animate({
+						opacity:1
+						}, 300, 'easeOutCubic', function() {
+					});
+					
+					$("h2#subtitle").animate({
+						opacity:0
+						}, 400, 'easeOutCubic', function() {
+					});
+					
+					$("#title").animate({
+						opacity:0
+						}, 100, 'easeOutCubic', function() {
+						
+						$("#title").html("THE BENEFITS AND RISKS OF TYSABRI<br /> SHOULD BE CAREFULLY CONSIDERED");
+						$("#title").animate({
+							opacity:1
+							}, 300, 'easeOutCubic', function() {
+						});
+							
+					});
+					
+					$("#text03").animate({
+						opacity:0,
+						}, 100, 'easeOutSine', function() {	
+						$("#text03").css({ display:'none' });	
+						
+						$("#text04").css({ display:'block' });
+						$("#text04").animate({
+							opacity:1,
+							}, 300, 'easeOutCubic', function() {		
+						});
+					});
+					
+
+					
+				}
+				else if(cur_state == 5){
+					
+					$("#pyramid .state04").delay(100).animate({
+						opacity:0
+						}, 300, 'easeOutCubic', function() {
+							
+					});
+					
+					$("#pyramid .state05").animate({
+						opacity:1
+						}, 300, 'easeOutCubic', function() {
+
+					});
+					
+					$("#expand_pml").animate({
+						opacity:0
+						}, 100, 'easeOutCubic', function() {
+							
+						$("#expand_pml").css({ display:'none' });
+						$("#expand_research").css({ display:'block' });
+						
+						$("#expand_research").animate({
+							opacity:1
+							}, 300, 'easeOutCubic', function() {
+	
+						});
+
+						$("#title").animate({
+							opacity:0
+							}, 100, 'easeOutCubic', function() {
+							
+							$("#title").html("RMS PATIENTS CAN START WITH THE <br />POWERFUL EFFICACY OF TYSABRI");
+							$("#title").animate({
+								opacity:1
+								}, 300, 'easeOutCubic', function() {
+							});
+								
+						});
+
+					});
+					
+					$("h2#subtitle").animate({
+						opacity:1
+						}, 400, 'easeOutCubic', function() {
+					});
+					
+					$("#text04").animate({
+						opacity:0,
+						}, 100, 'easeOutSine', function() {	
+						$("#text04").css({ display:'none' });	
+						
+						$("#text05").css({ display:'block' });
+						$("#text05").animate({
+							opacity:1,
+							}, 300, 'easeOutCubic', function() {		
+						});
+					});
+					
+
+					
+				}
+			
+			} // last state vs total states
+			
+		});
+		
+		/* app-patients back */
+		/* seeing if this supplants the original left function... */
+		$(".progress-controller #left-control").click(function(){
+		
+				event.stopPropagation(); // Prevent the top click event from firing...
+
+				if (cur_id == "app-patients") // just to keep with style...
+				{
+					if(cur_state == 0){
+
+						$("#pyramid").animate({
+							opacity:0,
+							top:'-20px'
+							}, 500, 'easeOutCubic', function() {
+								
+							$("#pyramid-foreground .top").delay(100).animate({
+								opacity:1,
+								left: '170px',
+								top:'0px'
+								}, 500, 'easeOutSine', function() {		
+							});
+							
+							$("#pyramid-foreground .middle").delay(100).animate({
+								opacity:1,
+								left: '115px',
+								top:'164px'
+								}, 500, 'easeOutSine', function() {		
+							});
+							
+							$("#pyramid-foreground .bottom").animate({
+								opacity:1
+								}, 700, 'easeOutSine', function() {	
+								
+							});
+								
+						});
+						
+						$("#text02").animate({
+							opacity:0,
+							}, 500, 'easeOutCubic', function() {	
+							$("#text02").css({ display:'none' });	
+							
+							$("#text00").css({ display:'block' });
+							$("#text00").delay(500).animate({
+								opacity:1,
+								left: '365px'
+								}, 700, 'easeOutCubic', function() {		
+							});
+						});
+						
+
+
+					}
+					else if(cur_state == 1){
+
+						$("#pyramid .state02").animate({
+							opacity:0
+							}, 300, 'easeOutCubic', function() {
+								
+						});
+						
+						$("#pyramid .state01").animate({
+							opacity:1
+							}, 300, 'easeOutCubic', function() {
+	
+						});
+						
+						$("#text02").animate({
+							opacity:0.3,
+							}, 100, 'easeOutCubic', function() {	
+							//$("#text02").css({ display:'none' });	
+						});
+
+					}
+					else if(cur_state == 2){
+
+						$("#pyramid .state03").animate({
+							opacity:0
+							}, 300, 'easeOutCubic', function() {
+								
+						});
+						
+						$("#pyramid .state02").animate({
+							opacity:1
+							}, 300, 'easeOutCubic', function() {
+	
+						});
+						
+						$("#title").animate({
+							opacity:0
+							}, 100, 'easeOutCubic', function() {
+							
+							$("#title").html("RMS PATIENTS CAN START WITH THE <br />POWERFUL EFFICACY OF TYSABRI");
+							$("#title").animate({
+								opacity:1
+								}, 300, 'easeOutCubic', function() {
+							});
+								
+						});
+						
+						$("#text03").animate({
+							opacity:0,
+							}, 100, 'easeOutCubic', function() {	
+							$("#text03").css({ display:'none' });	
+							$("#text02").css({ display:'block' });
+							$("#text02").animate({
+								opacity:1,
+								}, 500, 'easeOutCubic', function() {		
+							});
+						});
+
+					}
+					else if(cur_state == 3){
+						
+						$("#pyramid .state04").animate({
+							opacity:0
+							}, 300, 'easeOutCubic', function() {
+								
+						});
+						
+						$("#pyramid .state03").animate({
+							opacity:1
+							}, 300, 'easeOutCubic', function() {
+	
+						});
+						
+						$("h2#subtitle").animate({
+							opacity:1
+							}, 500, 'easeOutCubic', function() {
+						});
+						
+						$("#expand_pml").animate({
+							opacity:0
+							}, 300, 'easeOutCubic', function() {
+								$("#expand_pml").css({ display:'none' });
+						});
+						
+						$("#title").animate({
+							opacity:0
+							}, 150, 'easeOutCubic', function() {
+							
+							$("#title").html("<span style=\"font-size:87%;\">TYSABRI CAN BE PRESCRIBED FOR JCV ANTIBODY<br /> NEGATIVE PATIENTS FROM THE START</span>");
+							$("#title").animate({
+								opacity:1
+								}, 150, 'easeOutCubic', function() {
+							});
+								
+						});
+						
+						$("#text04").animate({
+							opacity:0,
+							}, 200, 'easeOutCubic', function() {	
+							$("#text04").css({ display:'none' });	
+						});
+						
+						$("#text03").css({ display:'block' });
+						$("#text03").animate({
+							opacity:1,
+							}, 500, 'easeOutCubic', function() {		
+						});
+
+					}
+					else if(cur_state == 4){
+
+						$("#pyramid .state05").animate({
+							opacity:0
+							}, 300, 'easeOutCubic', function() {
+								
+						});
+						
+						$("#pyramid .state04").animate({
+							opacity:1
+							}, 300, 'easeOutCubic', function() {
+	
+						});
+						
+						$("#expand_research").animate({
+							opacity:0
+							}, 150, 'easeOutCubic', function() {
+								
+							$("#expand_pml").css({ display:'block' });
+							$("#expand_research").css({ display:'none' });
+							
+							$("#expand_pml").animate({
+								opacity:1
+								}, 150, 'easeOutCubic', function() {
+		
+							});
+						});
+							
+						$("h2#subtitle").animate({
+							opacity:0
+							}, 500, 'easeOutCubic', function() {
+						});
+						
+						$("#title").animate({
+							opacity:0
+							}, 150, 'easeOutCubic', function() {
+							
+							$("#title").html("THE BENEFITS AND RISKS OF TYSABRI<br /> SHOULD BE CAREFULLY CONSIDERED");
+							$("#title").animate({
+								opacity:1
+								}, 150, 'easeOutCubic', function() {
+							});
+								
+						});
+		
+						$("#text04").css({ display:'block' });
+						$("#text04").animate({
+							opacity:1,
+							}, 300, 'easeOutCubic', function() {		
+						});
+						
+						$("#text05").animate({
+							opacity:0,
+							}, 200, 'easeOutCubic', function() {	
+							$("#text05").css({ display:'none' });	
+						});
+					
+						
+
+					}
+					
+				}
+				
+		});
+
+		// for the back & forth text areas...
+		$(".bouncetext").click(function(e){
+			e.stopPropagation();
+
+			$(this).toggleClass('up');
+			$(this).toggleClass('down');
+
+		});
+
+    });
+})(jQuery);

@@ -1,0 +1,46 @@
+
+#main_banner{
+	position:absolute;
+	top:10px;
+	left:40px;
+	width:631px;
+	height:170px;
+	
+	margin:0px;
+	padding:0px;
+	
+	background-position:left top;
+	background-repeat:no-repeat;
+	background-image:url(../msas/images/main_banner.png);
+}
+
+#info_columns{
+	position:absolute;
+	top:200px;
+	left:30px;
+	width:730px;
+	height:235px;
+	
+	margin:0px;
+	padding:0px;
+	
+	background-position:left top;
+	background-repeat:no-repeat;
+	background-image:url(../msas/images/info_columns.png);
+	
+}
+
+.progress-controller {
+	display:none;
+}
+
+.additional_information_button{
+	position:absolute;
+	top:520px;
+	left:15px;
+	width:135px;
+	height:42px;
+	background-image:url(../images/additional_information_button.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+}

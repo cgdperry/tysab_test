@@ -1,0 +1,137 @@
+#injectables{
+    font-family:ITCFranklinGothicStd,"Arial Narrow",arial;
+    }
+#injectables .content_body{
+    background:transparent url(../injectables/images/bkg_gradient.png) no-repeat 27px 21px;
+    }
+#injectables dl{
+    display:inline-block;
+    position:relative;
+    top:-90px;
+    width:235px;
+    vertical-align:top;
+    }
+#injectables p{
+    font:20px ITCFranklinGothicStd, "Arial Narrow", arial, sans-serif;
+    color:#000;
+    }
+#injectables p.results_title{
+    font:bold 20px ITCFranklinGothicStd, "Arial Narrow", arial, sans-serif;
+    line-height:1;
+    color:#0298d8;
+    }    
+#injectables dl p{
+    width:100%;
+    margin:0;
+    text-align:center;
+    line-height:1;
+    }
+#injectables dt{
+    height:125px;
+    text-align:center;
+    }
+    #injectables dt img{
+        opacity:0.35;
+        -webkit-box-reflect: below 7px -webkit-gradient(linear, center top, center bottom, from(transparent), color-stop(0.65, transparent), to(white));
+        }
+    #injectables #exclamation{
+        left:60px;
+        }
+    #injectables #clock{
+        left:30px;
+        }
+    #injectables #cane{
+        left:10px;
+        }
+    #injectables #exclamation dt{
+        background:transparent url(../injectables/images/exclamation.png) no-repeat 64px top;
+        }
+    #injectables #clock dt{
+        background:transparent url(../injectables/images/clock.png) no-repeat 64px top;
+        }
+    #injectables #cane dt{
+        background:transparent url(../injectables/images/cane.png) no-repeat 64px top;
+        }
+#injectables dd{
+    margin:0;
+    padding:0;
+    }
+#injectables dd ul{
+    margin:7px auto 0;
+    padding:0;
+    list-style-type:none;
+    }
+#injectables dd li{
+    margin-top:7px;
+    font:20px ITCFranklinGothicStd, "Arial Narrow", arial, sans-serif;
+    }
+    #injectables dd li p{
+        margin:0 auto;
+        width:32%;
+        padding-left:12px;
+        text-align:left;
+        background:transparent url(../injectables/images/icon_orange_dot.png) no-repeat 0% 49%;
+        }
+#injectables #study_results_container{
+    margin:21px auto 0;
+    width:100%;
+    }
+#injectables #study_results{
+    margin-top:90px;
+    padding-top:21px;
+    /* Mozilla Firefox 
+    background-image: -moz-linear-gradient(top, #999999 0%, #ffffff 25%, #ffffff 100%); 
+*/ 
+    /* Webkit (Safari/Chrome 10) 
+    background-image: -webkit-gradient(linear, left top, left bottom, 
+                        color-stop(0.0, #999999), 
+                        color-stop(0.25, #ffffff), 
+                        color-stop(1, #ffffff)
+                        );
+    }     
+    background-image: -webkit-radial-gradient(center 5%, ellipse contain, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    */
+    }
+#injectables #footer_text{
+    margin:0 auto 7px 21px;
+    padding:21px 0 35px;
+    width:90%;
+    border-top:1px solid #ccc;
+    }
+#injectables #footer_text p{
+    margin:0 0 0 14px;
+    font-size:12px;
+    line-height:1.1;
+    }
+#injectables.contents div + h2{
+    margin-top:-72px;
+    }
+#injectables.contents div + h2 p{
+    margin:0;
+    font:20px FuturaStd, "Arial Narrow", arial, sans-serif;
+    color:#0298d8;
+    }
+#injectables.contents div h2:last-child span{
+    display:block;
+    }
+    /* override styles */
+#injectables #icon_stack{
+    display:none;
+    height:100px;
+    bottom:-14px;
+    }
+#injectables #icon_stack div{
+    border:none;
+    }
+#injectables.contents h2{
+    padding-top:0;
+    text-align:center;
+    }
+#injectables ul,
+#injectables p{
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+    -webkit-padding-start:0;
+    }

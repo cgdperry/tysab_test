@@ -1,0 +1,569 @@
+/**
+ * CSS for sliding line graph
+ */
+
+/* Blue green text
+ * #039CDA
+ */
+/* Override styles */
+.efficacy #icon_stack{
+	bottom:101px;
+    /* temporary */
+    visibility:hidden;;
+	}
+.efficacy #probe,
+.efficacy #nurse{
+	margin-bottom:3px;
+	}
+/* Icon styles */
+.efficacy #icon_stack a{
+    display:block;
+	position:absolute;
+	left:-86px;
+	top:66px;
+    font:20px ITCFranklinGothicStd, "Arial Narrow",arial;
+	color:#039CDA
+}
+/* Apply styles */
+.efficacy #line_graph_container{
+	position:relative;
+	width:760px;
+	height:530px;
+}
+
+#c02_efficacy .content_body {
+    background: -webkit-gradient(radial, 100% 100%, 0px, 100% 100%, 100%, color-stop(0%,rgba(232,232,232,1)), color-stop(35%,rgba(232,232,232,1)), color-stop(100%,rgba(232,232,232,0))),
+                -webkit-gradient(radial, 100% 100%, 0px, 100% 100%, 100%, color-stop(0%,rgba(232,232,232,1)), color-stop(35%,rgba(232,232,232,1)), color-stop(100%,rgba(232,232,232,0)));
+    background: -webkit-radial-gradient(100% 100%, 300px 440px, rgba(232, 232, 232, 1) 0%,rgba(232, 232, 232, 1) 65%,rgba(232, 232, 232, 0) 100%),
+                -webkit-radial-gradient(100% 100%, 550px 200px, rgba(232, 232, 232, 1) 0%,rgba(232, 232, 232, 1) 55%,rgba(232, 232, 232, 0) 100%);
+    background: radial-gradient(100% 100%, 300px 440px, rgba(232,232,232,1) 0%,rgba(232,232,232,1) 65%,rgba(232,232,232,0) 100%),
+                radial-gradient(100% 100%, 550px 200px, rgba(232,232,232,1) 0%,rgba(232,232,232,1) 65%,rgba(232,232,232,0) 100%);
+}
+#c03_efficacy .content_body {
+    background: -webkit-gradient(radial, 100% 100%, 0px, 100% 100%, 100%, color-stop(0%,rgba(232,232,232,1)), color-stop(35%,rgba(232,232,232,1)), color-stop(100%,rgba(232,232,232,0))),
+                -webkit-gradient(radial, 100% 100%, 0px, 100% 100%, 100%, color-stop(0%,rgba(232,232,232,1)), color-stop(35%,rgba(232,232,232,1)), color-stop(100%,rgba(232,232,232,0))),
+                -webkit-gradient(linear, left bottom, right top, color-stop(11%,rgba(232,232,232,1)), color-stop(20%,rgba(232,232,232,0)));
+    background: -webkit-radial-gradient(100% 100%, 300px 440px, rgba(232, 232, 232, 1) 0%,rgba(232, 232, 232, 1) 65%,rgba(232, 232, 232, 0) 100%),
+                -webkit-radial-gradient(100% 100%, 550px 200px, rgba(232, 232, 232, 1) 0%,rgba(232, 232, 232, 1) 55%,rgba(232, 232, 232, 0) 100%),
+                -webkit-linear-gradient(50deg, rgba(232,232,232,1) 11%,rgba(232,232,232,0) 20%);
+    background: radial-gradient(100% 100%, 300px 440px, rgba(232,232,232,1) 0%,rgba(232,232,232,1) 65%,rgba(232,232,232,0) 100%),
+                radial-gradient(100% 100%, 550px 200px, rgba(232,232,232,1) 0%,rgba(232,232,232,1) 65%,rgba(232,232,232,0) 100%),
+                linear-gradient(50deg, rgba(232,232,232,1) 11%,rgba(232,232,232,0) 20%);
+}
+
+
+
+/* Graph CSS3 transitions */
+.efficacy #line_graph {
+    position: relative;
+    left:0px;
+    width: 725px;
+    height: 447px;
+}
+#c02_efficacy.efficacy  #line_graph {
+    overflow: hidden;
+}
+#c02_efficacy.efficacy #line_graph .line {
+  left: 228px;
+position: absolute;
+bottom: 173px;
+width: 0px;
+
+}
+#c03_efficacy.efficacy #line_graph .line,
+#c04_efficacy.efficacy #line_graph .line {
+    position: absolute;
+    bottom: 170px;
+    left: 258px;
+    width: 0px;
+    -webkit-transition: width 1s;
+}
+/*
+#c02_efficacy.efficacy #line_graph #introduction {
+    display:none;
+    top:10px;
+    left:180px;
+    width:530px;
+    height:454px;
+    background:url(../c02_efficacy/images/42_arrow.png) no-repeat left top
+}
+
+
+#c02_efficacy.efficacy #line_graph .line_graph_0 {
+    opacity:1;
+    top:10px;
+    width:650px;
+    height:447px;
+    background:url(../c02_efficacy/images/line_graph.png);
+	left: 900px;
+}
+
+*/
+
+#c02_efficacy.efficacy #line_graph .line_graph_1 {
+	width:400px;
+	height: 185px;
+	background: /*url(../c02_efficacy/images/line_graph_1.png) 0 0 no-repeat*/ white;
+}
+
+
+
+#c02_efficacy.efficacy #label_placebo, #label_active {
+    position:absolute;
+    font: bold 16px ITCFranklinGothicStd, "Arial Narrow",arial;
+    opacity:0;
+}
+#c02_efficacy.efficacy #icon_stack a { display:none; }
+
+#c02_efficacy.efficacy #line_graph .line_graph_slider{
+	z-index: 500;
+	position: absolute;
+	bottom: 161px;
+left: 218px;
+	width: 396px;
+	height: 178px;
+	background-repeat: no-repeat;
+	background-image: url(../c02_efficacy/images/line_graph_slider.png);
+
+}
+
+#c02_efficacy.efficacy.state-0 #line_graph #introduction{ display:block; }
+#c02_efficacy.efficacy.state-0 #line_graph .line_graph_0{ opacity:0; left:900px}
+.efficacy.state-0 #line_graph .line_graph_1      { right: -670px; }
+#c02_efficacy.efficacy.state-0 #line_graph .line_graph_slider { /*background-position: -17px 0px; width:0; opacity:0;*/ }
+
+
+.efficacy.state-0 #icon_stack a{ display:none; }
+
+#c02_efficacy.efficacy.state-1 #line_graph #introduction{
+    display:block;
+ /*   -webkit-transition:-webkit-transform 3s;
+    -webkit-transform:translate3d( -950px, 0, 0 );*/
+}
+#c02_efficacy.efficacy.state-1 #line_graph .line_graph_0 {
+   /* left:161px;
+    -webkit-transition:  left 3s;
+	transition-property: left 3s;*/
+}
+#c02_efficacy.efficacy.state-1 #line_graph .line_graph_slider {
+	background-position: 0px 0px;
+    width: 396px;
+    opacity 1;
+  
+}
+
+#c02_efficacy.efficacy.state-1 #line_graph .line_graph_1      { right: 71px; width: 420px; }
+
+/#c02_efficacy.efficacy.state-4 #line_graph .line_graph_1      { width: 170px; }
+#c02_efficacy.efficacy.state-4 #line_graph .line_graph_slider { width: 158px; opacity: 1;  }
+
+#c02_efficacy.efficacy.state-3 #line_graph .line_graph_1      { width: 323px; }
+#c02_efficacy.efficacy.state-3 #line_graph .line_graph_slider { width: 312px;opacity: 1;  }
+
+#c02_efficacy.efficacy.state-2 #line_graph .line_graph_1      {/* width: 0px;*/ }
+
+
+#c02_efficacy.efficacy.state-2 #line_graph .line_graph_slider {  }
+#c02_efficacy.efficacy.state-2 #icon_stack #skip { color:#ccc; }
+
+ /* c02_efficacy specific styles */
+#c02_efficacy.efficacy.state-2 #label_placebo{
+    opacity:0;
+    top:90px;
+    left:596px;
+    color:#666;
+
+}
+#c02_efficacy.efficacy.state-2 #label_active{
+    opacity:0;
+    top:158px;
+    left:590px;
+    color:#000;
+
+}
+#c02_efficacy.efficacy.state-0 .magnifying_glass_button{
+    display:block;
+    opacity:0;
+}
+/*
+#c02_efficacy.efficacy.state-1 .magnifying_glass_button{
+    display:block;
+    opacity:1;
+    -webkit-transition: opacity 0.5s 0.6s;
+}
+#c02_efficacy.efficacy.state-4 .magnifying_glass_button{
+    display:block;
+    opacity:1;
+    -webkit-transition: opacity 1s 3s;
+}
+
+#c02_efficacy.efficacy.state-3 .magnifying_glass_button{
+    display:block;
+    opacity:1;
+    -webkit-transition: opacity 1s 3s;
+}
+*/
+#c02_efficacy.efficacy.state-3 .magnifying_glass_button{
+    display:block;
+    opacity:1;
+    -webkit-transition: opacity 1s 3s;
+}
+
+/* Added c02 specific styles AP 2013 07 19 */
+#c02_efficacy .efficacy .photo{
+	position:absolute;
+	top:40px;
+    width:174px;
+    height:345px;
+    }
+	
+#c02_efficacy div.subtitle /* may generalize this later */
+{
+	background-image:url(../c02_efficacy/images/subtitle.png);
+	background-repeat:no-repeat;
+	background-position:left center;
+	width:674px;
+	height:22px;
+	margin-left: 40px;
+}
+
+#container #c02_efficacy .contextual_isi{ /* may generalize this later */
+	bottom:200px;
+}
+
+#c02_efficacy #isi{
+	height:170px;
+}
+
+ /* --- hide elements of other pages --- */
+#c03_efficacy.efficacy #line_graph .line_graph_1{ display:none; }
+#c03_efficacy.efficacy #line_graph .line_graph_2{ display:none; }
+#c03_efficacy.efficacy #icon_stack a,
+#c02_efficacy.efficacy #icon_stack a { display:none }
+
+ /* c03_efficacy specific styles */
+#c03_efficacy.efficacy #line_graph{
+    top:50px;
+    width:434px;
+    height:347px;
+    }
+#c03_efficacy.efficacy #icon_stack{
+    left:693px;
+    bottom:60px;
+}
+#c03_efficacy.efficacy .photo{
+    right: 0px;
+    top: 30px;
+    width: 319px;
+    height: 478px;
+    }
+#c03_efficacy.efficacy .photo img{
+    position:relative;
+    left:59px;
+    top:0px;
+    }
+
+.line-perc-container{
+width: 400px;
+top: 105px;
+position: absolute;
+overflow: hidden;
+height: 126px;}
+
+#c03_efficacy.efficacy #c03_container{
+                                                    position:relative;
+                                                    top:-550px;
+                                                    left:-100px;
+                                                    width:557px;
+                                                    height:447px;
+                                                    opacity:0;
+                                                  }
+#c03_efficacy.efficacy #line_graph .line_graph_1 {
+                                                display:block;
+                                                   left:290px;
+                                                   top:50px;
+                                                   width:10px;
+                                                   height:48px;
+                                                   opacity:0;
+                                                   /*background:url(../c03_efficacy/images/arrow_pointing_up.gif) no-repeat left top;*/
+                                                 }
+#c03_efficacy.efficacy #line_graph .line_graph_2 {
+												   z-index:50;
+                                                	display:block;
+                                                   left:290px;
+                                                   top:50px;
+                                                   width:10px;
+                                                   height:28px;
+                                                   opacity:0;
+                                                  /* background:url(../c03_efficacy/images/arrow_pointing_down.gif)no-repeat left top;*/
+                                                 }
+#c03_efficacy.efficacy.state-0 #line_graph .line_graph_1{
+                                                            top:150px;
+                                                            height:0;
+                                                            opacity:0;
+                                                         }
+#c03_efficacy.efficacy.state-0 #line_graph .line_graph_2{
+                                                           
+                                                         }
+#c03_efficacy.efficacy.state-0 .magnifying_glass_button { display:block; opacity:0; }
+
+#c03_efficacy.efficacy.state-1 #c03_container {
+                                                        display:block;
+                                                        top:-62px;
+                                                        opacity:1;
+                                                       /* -webkit-transition: top 2s, opacity .25s .5s;*/
+                                                       }
+
+#c03_efficacy.efficacy.state-1 #c03_container .line_graph_1{
+                                                          
+                                                             /*  -webkit-transition: opacity 2s 1s, height 2s 1s, top 2s 1s;*/
+                                                            }
+#c03_efficacy.efficacy.state-1 #c03_container .line_graph_2{
+                                                              
+                                                              /* -webkit-transition: opacity 2s 1s, height 2s 1s, top 2s 1s;*/
+                                                            }
+#c03_efficacy.efficacy.state-1 .magnifying_glass_button{
+    display:block;
+    opacity:0;
+
+    z-index: 1;
+}
+ /* --- hide elements of other pages --- */
+#c04_efficacy.efficacy #icon_stack a { display:none }
+
+ /* c04_efficacy specific styles */
+#c04_efficacy.efficacy #line_graph{
+    top:50px;
+    width:434px;
+    height:347px;
+    }
+#c04_efficacy.efficacy #icon_stack{
+    left:693px;
+    bottom:60px;
+}
+#c04_efficacy.efficacy .photo{
+    left: 0px;
+    top: 54px;
+    width: 260px;
+    height: 440px;
+}
+#c04_efficacy.efficacy #reflection{
+    top: 112px;
+    left: 202px;
+}
+
+#c04_efficacy.efficacy #c04_container{
+                                       position:relative;
+                                       top:-550px;
+                                       left:70px;
+                                       width:508px;
+                                       height:459px;
+                                       opacity:0;
+                                    }
+#c04_efficacy.efficacy #line_graph .line_graph_1 { display:block;
+                                                   left:326px;
+                                                   top:80px;
+                                                   width:10px;
+                                                   height:38px;
+                                                   opacity:0;
+                                                   background:url(../c04_efficacy/images/arrow_pointing_up.gif) no-repeat left top;
+                                                 }
+#c04_efficacy.efficacy #line_graph .line_graph_2 { display:block;
+                                                   top:118px;
+                                                   left:326px;
+                                                   width:10px;
+                                                   height:38px;
+                                                   opacity:0;
+                                                   background:url(../c04_efficacy/images/arrow_pointing_down.gif)no-repeat left top;
+                                                 }
+#c04_efficacy.efficacy.state-0 #c04_container .line_graph_1{
+                                                               top:100px;
+                                                               opacity:0;
+                                                            }
+#c04_efficacy.efficacy.state-0 #c04_container .line_graph_2{
+                                                               top:100px;
+                                                               opacity:0;
+                                                            }
+#c04_efficacy.efficacy.state-0 .magnifying_glass_button{ display:block; opacity:0; }
+
+#c04_efficacy.efficacy.state-1 #c04_container{
+                                                        display:block;
+                                                        top:10px;
+                                                        left:70px;
+                                                        opacity:1;
+                                                        -webkit-transition: top 2s, opacity .25s .5s;
+                                                       }
+#c04_efficacy.efficacy.state-1 #c04_container .line_graph_1{
+                                                               top:97px;
+                                                               opacity:1;
+                                                               -webkit-transition: top 2s 2s, opacity 2s 2s;
+                                                            }
+#c04_efficacy.efficacy.state-1 #c04_container .line_graph_2{
+                                                               top:201px;
+                                                               opacity:1;
+                                                               -webkit-transition: top 2s 2s, opacity 2s 2s;
+                                                            }
+#c04_efficacy.efficacy.state-1 .magnifying_glass_button{ display:block; opacity:1; -webkit-transition: opacity 1s 1s; }
+/* magnifying glass light box*/
+.magnifying_glass_button{
+    display:none;
+    position:absolute;
+    width:26px;
+    height:28px;
+    border:none;
+    cursor:pointer;
+    pointer-events: auto;
+}
+#container footer .magnifying_glass_button{
+    pointer-events: auto;
+}
+    .magnifying_glass_container {
+		z-index: 1001;
+        display:none;
+        position:absolute;
+        top:22px;
+        left:7px;
+        padding: 42px 264px 42px 42px;
+        }
+    .magnifying_glass_container div {
+        box-shadow: 0 0 35px 21px rgba(0, 0, 0, 0.35);
+        border-radius:7px;
+        width:704px;
+        height:635px;
+    }
+        .magnifying_glass_container span{
+            position:absolute;
+            top:42px;
+            right:265px;
+            width:114px;
+            height:38px;
+            display:block;
+            }
+#c02_efficacy.efficacy .magnifying_glass_button{
+    top: 545px;
+	left: 510px;
+    background:transparent url(../images/magnifying_glass.gif) no-repeat left top;
+    }
+    #c02_efficacy_mg.magnifying_glass_container div {
+        background:#fff url(../c02_efficacy/images/magnified_chart.png) no-repeat left top;
+        }
+#c03_efficacy.efficacy .magnifying_glass_button{
+    top:-120px;
+    left:375px;
+    background:transparent url(../images/magnifying_glass.gif) no-repeat left top;
+    }
+    #c03_efficacy_mg.magnifying_glass_container div {
+        background:#fff url(../c03_efficacy/images/magnified_chart.png) no-repeat left top;
+        }
+#c04_efficacy.efficacy .magnifying_glass_button{
+    top:-145px;
+    left:637px;
+    background:transparent url(../images/magnifying_glass.gif) no-repeat left top;
+    }
+    #c04_efficacy_mg.magnifying_glass_container div {
+        background:#fff url(../c04_efficacy/images/magnified_chart.png) no-repeat left top;
+        }
+
+#c04_efficacy.efficacy .graph_contents #graph_67{
+	margin: 19px 0 0 -12px;
+}
+#c04_efficacy.efficacy #down-arrow-67{
+	padding-top: 12px;
+}
+
+.efficacy#c04_efficacy #chart67 .label1 .big-blue {
+	font-size: 26px;
+	font-family: arial, sans-serif;
+	color: #0799D7;
+	line-height: 29px;
+	letter-spacing: 0px;
+}
+#chart67 .graph_contents .label1 {
+	padding: 100px 0 0 310px;
+	line-height: 1em;
+}
+.efficacy#c04_efficacy #chart67  .label1{
+	-webkit-transition: opacity 2s;
+	-webkit-transition-delay: 3s;
+}
+.efficacy#c04_efficacy.state-0 #chart67 .label1{
+	opacity: 0;
+}
+.efficacy#c04_efficacy.state-1  #chart67 .label1{
+	opacity:1
+}
+
+#c04_efficacy #percentage_fade {
+	height: 60px;
+	width: 75px;
+	position: absolute;
+	top: 108px;
+	left: 317px;
+	background-color: white;
+	-webkit-transition: opacity 2s 2s;
+}
+#c04_efficacy.state-0 #percentage_fade {
+	opacity: 1;
+}
+#c04_efficacy.state-1 #percentage_fade {
+	display:none;
+}
+
+
+#percentage_fade_top{
+	opacity:0;
+/*	top: 72px;*/
+top: 90px;
+left: 295px;
+position: absolute;
+}
+
+#percentage_fade_bottom{left: 347px;
+opacity:0;
+position: absolute;
+/*top: 173px;*/
+top: 145px;
+}
+/* from efficacy3d.css*/
+.efficacy#c04_efficacy #line_graph, .efficacy#c03_efficacy #line_graph {
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 760px;
+}
+.efficacy #line_graph_container {
+    font: bold 20px ITCFranklinGothicStd, "Arial Narrow",arial;
+}
+.efficacy#c04_efficacy.state-1 #line_graph #chart67 {
+  
+}
+.efficacy#c04_efficacy #chart67 .little-blue{
+    font-weight: normal;
+    color: #009ad8;
+    padding-left: 5px;
+}
+
+
+
+/* css transitioin out, adding css placement styling then animating via jquery */
+/* Removed AP 2013 07 19 */
+/*
+
+.sub-page-button{
+	display:block;
+	width:98px;
+	height:34px;
+	
+	position:absolute;
+	left:630px;	
+	bottom:130px;
+}
+.sub-page-button a{
+	display:block;
+	width:98px;
+	height:34px;
+	
+background:url(../images/adherencebutton.png) no-repeat 0 0;
+}
+*/
+

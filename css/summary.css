@@ -1,0 +1,124 @@
+﻿/*#container.tap-open #summary .content_body {
+    padding-top: 12px;
+}
+#container #summary .content_body {
+    padding-top: 44px;
+    padding: 44px 300px 0 50px;
+    width: 648px;
+}
+*/
+#chart_area {
+	position:absolute;
+	left:100px;
+	top:40px;
+	width:800px;
+	height:400px;
+	display:block;
+	overflow:hidden;
+}
+
+#chart_top {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:800px;
+	height:145px;
+	display:block;
+	overflow:hidden;
+}
+
+.blue_panel {
+	position:absolute;
+	top:0px;
+	height:145px;
+	background-position:top center;
+	background-repeat:no-repeat;
+	transition: opacity 500ms ease-out;
+	-webkit-transition: opacity 500ms ease-out;
+}
+
+#blue_panel_left {
+	left:0px;
+	width:266px;
+	background-image:url(../summary/images/blue_panel_left.png);
+}
+
+#blue_panel_middle{
+	left:266px;
+	width:267px;
+	background-image:url(../summary/images/blue_panel_middle.png);
+}
+
+#blue_panel_right{
+	left:533px;
+	width:266px;
+	background-image:url(../summary/images/blue_panel_right.png);
+}
+
+#chart_bottom {
+	position:absolute;
+	top:145px;
+	left:0px;
+	width:800px;
+	height:255px;
+	display:block;
+	overflow:hidden;
+}
+
+.chart_text {
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-position:top center;
+	background-repeat:no-repeat;
+	width:800px;
+	height:255px;
+	transition: opacity 500ms ease-out;
+	-webkit-transition: opacity 500ms ease-out;
+}
+
+#chart_text01 {
+	background-image:url(../summary/images/chart_text01.png);
+}
+
+#chart_text02 {
+	background-image:url(../summary/images/chart_text02.png);
+}
+
+#chart_text03 {
+	background-image:url(../summary/images/chart_text03.png);
+}
+
+
+/* state 0 */
+#summary.contents.state-0 #blue_panel_left { opacity:0.3; }
+#summary.contents.state-0 #blue_panel_middle { opacity:0.3; }
+#summary.contents.state-0 #blue_panel_right { opacity:0.3; }
+#summary.contents.state-0 #chart_text01 { opacity:0; }
+#summary.contents.state-0 #chart_text02  { opacity:0; }
+#summary.contents.state-0 #chart_text03  { opacity:0; }
+
+/* state 1 */
+#summary.contents.state-1 #blue_panel_left { opacity:1; }
+#summary.contents.state-1 #blue_panel_middle { opacity:0.3; }
+#summary.contents.state-1 #blue_panel_right { opacity:0.3; }
+#summary.contents.state-1 #chart_text01 { opacity:1; }
+#summary.contents.state-1 #chart_text02  { opacity:0; }
+#summary.contents.state-1 #chart_text03  { opacity:0; }
+
+/* state 2 */
+#summary.contents.state-2 #blue_panel_left { opacity:0.3; }
+#summary.contents.state-2 #blue_panel_middle { opacity:1; }
+#summary.contents.state-2 #blue_panel_right { opacity:0.3; }
+#summary.contents.state-2 #chart_text01 { opacity:0; }
+#summary.contents.state-2 #chart_text02  { opacity:1; }
+#summary.contents.state-2 #chart_text03  { opacity:0; }
+
+/* state 3 */
+#summary.contents.state-3 #blue_panel_left { opacity:0.3; }
+#summary.contents.state-3 #blue_panel_middle { opacity:0.3; }
+#summary.contents.state-3 #blue_panel_right { opacity:1; }
+#summary.contents.state-3 #chart_text01 { opacity:0; }
+#summary.contents.state-3 #chart_text02  { opacity:0; }
+#summary.contents.state-3 #chart_text03  { opacity:1; }
+

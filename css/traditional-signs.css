@@ -1,0 +1,52 @@
+
+#info_area
+{
+	width:670px;
+}
+
+#info_area hr
+{
+	text-align:left;
+	width:500px;
+	margin:20px 0px 10px 40px;
+}
+
+#info_area p
+{
+	padding-left:40px;
+	font-family:'ITCFranklinGothicStd';
+    font-weight: normal;
+    font-style: normal;
+	font-size:120%;	
+	line-height:115%;
+}
+
+span.bigbold
+{
+	color:#009ad9;
+	font-size:150%;
+	font-weight:bold;
+}
+
+span.mediumbold
+{
+	color:#009ad9;
+	font-size:100%;
+	font-weight:bold;
+}
+
+span.superscript{
+	vertical-align:super;
+	font-size:50% !important;
+	display:inline !important;
+}
+
+.subtitle{
+	position:relative;
+	background-repeat:no-repeat;
+	background-position:left center;
+	width:716px;
+	height:24px;
+	margin-left: 40px;
+	z-index:1000;
+}

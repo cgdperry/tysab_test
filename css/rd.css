@@ -1,0 +1,374 @@
+#risk-disease .content_body .bg_opaque_mask {
+    position: absolute;
+    top: 0px;
+    height: 530px;
+    width: 998px;
+}
+#risk-disease .content_body {
+    background:-webkit-radial-gradient(100% 100%, 550px 200px, rgba(232, 232, 232, 1) 0%,rgba(232, 232, 232, 1) 55%,rgba(232, 232, 232, 0) 100%);
+}
+
+#container #risk-disease h1#title {
+	font-size:35px;
+	height:110px;
+}
+
+
+#container #risk-disease h1 span.pre-title{
+	font-size:24px;
+}
+
+
+#container #risk-disease h2 {
+    font: bold 23px ITCFranklinGothicStd, "Arial Narrow",arial;
+    color: #231f20;
+    padding-left: 40px;
+    margin: 0px 0 8px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 0;
+}
+#container #risk-disease h3 {
+    font: bold 20px ITCFranklinGothicStd,"Arial Narrow",arial;
+    color: #231f20;
+    padding-left: 40px;
+    margin: 30px 250px 8px 0px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#timeline_area{
+	position:absolute;
+	left:75px;
+	top:0px;
+	width:900px;
+	height:450px;
+	overflow:hidden;
+}
+
+#gradient_blue{
+	position:absolute;
+	left:-861px;
+	bottom:40px;
+	width:900px;
+	height:200px;
+	background-image:url(../risk-disease/images/gradient_blue.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+}
+
+#gradient_grey{
+	position:absolute;
+	left:-100px;
+	bottom:40px;
+	width:900px;
+	height:200px;
+	background-image:url(../risk-disease/images/gradient_grey.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+}
+
+#left_mask{
+	position:absolute;
+	bottom:40px;
+	left:0px;
+	height:200px;
+	width:42px;
+	background-image:url(../risk-disease/images/left_mask.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+}
+
+#chevron{
+	position:absolute;
+	top:40px;
+	left:0px;
+	height:400px;
+	width:80px;
+	background-image:url(../risk-disease/images/chevron.png);
+	background-repeat:no-repeat;
+	background-position:center left;
+	opacity:0;
+}
+
+.divider{
+	position:absolute;
+	height:200px;
+	width:42px;
+	background-image:url(../risk-disease/images/divider.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+}
+
+#divider01{
+	bottom:40px;
+	left:250px;
+}
+#divider02{
+	bottom:40px;
+	left:510px;
+}
+
+img.sketch{
+	position:absolute;
+	height:328px;
+	width:261px;
+}
+
+#sketch_walking{
+	top:0px;
+	left:-20px; /* start -20 */
+	opacity:0;
+}
+
+#sketch_sitting{
+	top:0px;
+	left:260px; /* start -20 */
+	opacity:0;
+}
+
+#sketch_wheelchair{
+	top:0px;
+	left:500px; /* start -20 */
+	opacity:0;
+}
+
+.gradient_text{
+	position:absolute;
+	width:180px;
+	height:56px;
+	background-position:bottom left;
+	background-repeat:no-repeat;
+}
+
+#gradient_text_01{
+	top:348px;
+	left:20px;
+	background-image:url(../risk-disease/images/gradient_text_01.png);
+}
+#gradient_text_02{
+	top:348px;
+	left:270px;
+	background-image:url(../risk-disease/images/gradient_text_02.png);
+}
+#gradient_text_03{
+	top:348px;
+	left:530px;
+	background-image:url(../risk-disease/images/gradient_text_03.png);
+}
+
+#gradient_text_02a{
+	top:348px;
+	left:580px;
+	background-image:url(../risk-disease/images/gradient_text_02a.png);
+	opacity:0;
+}
+#gradient_text_03a{
+	top:348px;
+	left:674px;
+	background-image:url(../risk-disease/images/gradient_text_03a.png);
+	opacity:0;
+}
+
+#text_01{
+	position:absolute;
+	top:60px;
+	left:340px;
+	width:420px;
+	height:130px;
+	background-position:center left;
+	background-repeat:no-repeat;
+	background-image:url(../risk-disease/images/text_01.png);
+	opacity:0;
+}
+
+#text_02{
+	position:absolute;
+	top:65px;
+	left:25px;
+	width:327px;
+	height:65px;
+	background-position:center left;
+	background-repeat:no-repeat;
+	background-image:url(../risk-disease/images/text_02.png);
+	opacity:0;
+}
+
+#text_03{
+	position:absolute;
+	top:65px;
+	left:200px;
+	width:342px;
+	height:109px;
+	background-position:center left;
+	background-repeat:no-repeat;
+	background-image:url(../risk-disease/images/text_03.png);
+	opacity:0;
+}
+
+#text_04{
+	position:absolute;
+	top:65px;
+	left:260px;
+	width:330px;
+	height:130px;
+	background-position:center left;
+	background-repeat:no-repeat;
+	background-image:url(../risk-disease/images/text_04.png);
+	opacity:0;
+}
+
+/* magnifying glass light box*/
+#edss_button.magnifying_glass_button{
+	position:absolute;
+	width:120px;
+	height:35px;
+	bottom:50px;
+	left:60px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-image:url(../risk-disease/images/edss_button.png);
+}
+
+.magnifying_glass_button{
+    /*display:none;
+    position:absolute;
+    width:26px;
+    height:28px;*/
+    border:none;
+    cursor:pointer;
+    pointer-events: auto;
+}
+
+#container footer .magnifying_glass_button{
+    pointer-events: auto;
+}
+
+.magnifying_glass_container {
+	z-index: 1001;
+	display:none;
+	position:absolute;
+	top:45px;
+	left:7px;
+	padding: 42px 264px 42px 42px;
+}
+
+#risk-disease_mg{
+	/* can do shade here? */
+}
+
+.magnifying_glass_container div.bg {
+	box-shadow: 0 0 35px 21px rgba(0, 0, 0, 0.35);
+	border-radius:7px;
+	width:894px;
+	height:537px;
+}
+
+#risk-disease_mg.magnifying_glass_container span.close{
+	position:absolute;
+	top:15px;
+	right:10px;
+	width:114px;
+	height:38px;
+	display:block;
+	cursor:pointer;
+}
+
+#risk-disease_mg.magnifying_glass_container div.bg {
+	position:absolute;
+	top:45px;
+	left:45px;
+	background:#fff url(../risk-disease/images/popup_chart_bg.png) no-repeat left top;
+}
+
+#risk-disease_mg.magnifying_glass_container div.area_active{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:894px;
+	height:500px;
+}
+
+#risk-disease_mg.magnifying_glass_container div.area_left{
+	position:absolute;
+	top:20px;
+	left:0px;
+	height:200px;
+	width:345px;
+	cursor:pointer;
+}
+
+#risk-disease_mg.magnifying_glass_container div.area_middle{
+	position:absolute;
+	top:100px;
+	left:345px;
+	height:200px;
+	width:122px;
+	cursor:pointer;
+}
+
+#risk-disease_mg.magnifying_glass_container div.area_right{
+	position:absolute;
+	top:160px;
+	left:467px;
+	height:200px;
+	width:427px;
+	cursor:pointer;
+}
+
+/*
+#risk-disease_mg.magnifying_glass_container span{
+	position:absolute;
+	top:600px;
+	right:270px;
+	width:114px;
+	height:38px;
+	display:block;
+	}
+*/
+
+/* This would've worked CSS only but the last state is multi-staged. Hrm.*/
+/*
+
+
+#gradient_blue{
+	position:absolute;
+	left:-100px;
+	bottom:0px;
+	width:900px;
+	height:200px;
+	background-image:url(../risk-disease/images/gradient_blue.png);
+	background-repeat:no-repeat;
+	background-position:bottom-left;
+	transition: left 1s;
+	-webkit-transition: left 1s;
+}
+
+#gradient_grey{
+	position:absolute;
+	left:-100px;
+	bottom:0px;
+	width:900px;
+	height:200px;
+	background-image:url(../risk-disease/images/gradient_grey.png);
+	background-repeat:no-repeat;
+	background-position:bottom-left;
+}
+
+#risk-disease.state-0 #gradient_blue  {
+	left:-1000px;
+}
+
+#risk-disease.state-1 #gradient_blue  {
+	left:-610px;
+}
+
+#risk-disease.state-2 #gradient_blue  {
+	left:-350px;
+}
+
+#risk-disease.state-3 #gradient_blue  {
+	left:-100px;
+}
+*/

@@ -1,0 +1,177 @@
+﻿#adherence .content_body{
+	background-image:url(../adherence/adherence_bckgrd_sprite.png);	
+	background-repeat:no-repeat;
+	background-position:-27px -590px;
+	
+}
+
+#adherence .chart-active h2{
+	z-index:0;	
+}
+
+#cellWrapper{
+	display:block;
+	height: 276px; /*changed from 276*/
+	width:624px;   /*changed from 624*/
+	position:absolute;
+	margin-left:50px; /*changed from 77*/
+	margin-top:32px;
+}
+
+#beforeTys, #afterTys, #alwaysTys{float:left;}
+
+#afterTys{
+	/*display:none;*/
+}
+
+#alwaysTys{
+	/*display:none;*/
+	margin-top:-5px;
+}
+
+
+#skip {
+    /*display: block;
+    position: absolute;
+    left: 665px;
+    top: -76px;
+    font: 16px ITCFranklinGothicStd, "Arial Narrow",arial;
+    color: #006699;
+    text-decoration: none;
+    padding: 10px 0px;
+	*/
+	position: absolute;
+    left: 690px;
+    top: 480px;
+    font: 16px ITCFranklinGothicStd, "Arial Narrow",arial;
+    color: #006699;
+    text-decoration: none;
+    padding: 10px 0px;
+
+}
+
+#container .content_body {
+	height:465px;
+}
+
+#container #adherence footer {
+	/*height:140px;*/
+}
+
+#container #adherence footer .expand_info.collapsed {
+	margin-bottom:100px;
+}
+
+#container #adherence footer .expand_info.collapsed .info_contents {
+    height: 24px;
+}
+
+#container #adherence footer .expand_info.expanded .active_arrow{
+	top:19px;
+}
+
+#container #adherence footer .expand_info.expanded h4{
+	margin-top:10px;	
+}
+
+#container #adherence footer .expand_info .info_contents > :first-child {
+	padding-bottom: 0px;
+}
+
+#container #adherence footer .expand_info.expanded ol{
+	display: block;
+	list-style-type: decimal;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+	
+	margin-top:5px;
+}
+
+#container #adherence footer .expand_info.expanded ol li{
+	list-style-type:decimal;	
+}
+
+#container #adherence footer .expand_info.expanded ul li{
+	list-style-type:disc;	
+}
+
+/* No progress bar since there is only one state */
+.progress-controller {
+	display:none;
+}
+
+/*
+#adherence.state-0 #beforeTys{
+	display:none;
+}
+*/
+
+/*
+#adherence.state-0 #beforeTys{
+	display:block;
+	
+}
+#adherence.state-1.move-backward #afterTys{
+	-webkit-animation: none !important;
+}
+
+#adherence.state-1 #afterTys{
+	display:block;
+	-webkit-animation: state1 1s;
+}
+
+#adherence.state-2 #afterTys{
+	display:block;
+	
+}
+
+#adherence.state-2 #alwaysTys{
+	display:block;
+	-webkit-animation: state2 1s;
+}
+#adherence.state-2.move-backward #alwaysTys{
+-webkit-animation: none !important;
+}
+
+#adherence.state-2 .content_body{
+	-webkit-transition-delay: 950ms;
+	background-position:-27px -590px;
+}
+
+
+
+@-webkit-keyframes state1{
+0% {-webkit-transform:rotateY(90deg); -webkit-transform-origin: 0% 100%;}  
+
+100% {-webkit-transform:rotateY(0deg); -webkit-transform-origin: 0% 100%;}		
+}
+
+@-webkit-keyframes state2{
+0% {-webkit-transform:rotateX(-90deg);-webkit-transform-origin:	top;}  
+
+100% {-webkit-transform:rotateX(0deg);-webkit-transform-origin:	top;}		
+}
+*/
+.additional_information_button{
+	position:absolute;
+	bottom:20px;
+	left:15px;
+	width:135px;
+	height:42px;
+	background-image:url(../images/additional_information_button.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+.subtitle{
+	position:relative;
+	background-repeat:no-repeat;
+	background-position:left center;
+	width:712px;
+	height:36px;
+	margin-left: 40px;
+	z-index:1000;
+}

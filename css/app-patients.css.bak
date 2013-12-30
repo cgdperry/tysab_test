@@ -1,0 +1,321 @@
+
+#app-patients.contents {
+    /*background: #fff url('../images/app-patients-bg.jpg') no-repeat left 15px scroll;*/
+	background-image:url('../app-patients/images/bg_sky.png');
+	background-color:#FFFFFF;
+	background-repeat:no-repeat;
+	background-position:-15px 100px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#app-patients.contents h1#title{
+	height:60px;
+}
+
+#app-patients.contents h2 {
+	font-family:ITCFranklinGothicStd-BkCd;
+}
+
+
+#app-patients.contents #action_container {
+	position:absolute;
+	top:90px;
+	left:0px;
+	width:740px;
+	height:450px;
+}
+
+#app-patients.contents #horizon {
+	/* Put the darker horizon in here */
+}
+
+/* Precise measurement: 446x437 */
+/* Extended to allow individual piece animation upward */
+#app-patients.contents #pyramid-foreground {
+	position:absolute;
+	top:0px;
+	left:20px;
+	width:450px;
+	height:450px;
+}
+
+#pyramid-foreground .top{
+	position:absolute;
+	top:0px;
+	left:170px;
+	height:187px;
+	width:227px;
+	background-image:url(../app-patients/images/pyramid_foreground_top.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+#pyramid-foreground .middle{
+	position:absolute;
+	top:164px;
+	left:115px;
+	height:147px;
+	width:349px;
+	background-image:url(../app-patients/images/pyramid_foreground_middle.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+#pyramid-foreground .bottom{
+	position:absolute;
+	top:245px;
+	left:63px;
+	height:194px;
+	width:446px;
+	background-image:url(../app-patients/images/pyramid_foreground_bottom.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+#pyramid{
+	position:absolute;
+	top:-50px;
+	left:-10px;
+	width:442px;
+	height:432px;
+	opacity:0;
+}
+
+#pyramid .state01{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:442px;
+	height:432px;
+	background-image:url(../app-patients/images/pyramid_01.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	opacity:1;
+}
+#pyramid .state02{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:442px;
+	height:432px;
+	background-image:url(../app-patients/images/pyramid_02.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	opacity:0;
+}
+
+#pyramid .state03{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:442px;
+	height:432px;
+	background-image:url(../app-patients/images/pyramid_03.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	opacity:0;
+}
+#pyramid .state04{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:442px;
+	height:432px;
+	background-image:url(../app-patients/images/pyramid_04.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	opacity:0;
+}
+#pyramid .state05{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:442px;
+	height:432px;
+	background-image:url(../app-patients/images/pyramid_05.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	opacity:0;
+}
+
+#container #expand_pml, #container #expand_research {
+	display:none;
+	opacity:0;
+	z-index:3001;
+}
+
+#container footer .expand_info.collapsed{
+	margin-bottom:48px;
+}
+
+#container footer .expand_info.expanded{
+	margin-bottom:0px;
+}
+
+#container footer .expand_info.expanded .info_contents {
+	height:200px;
+	margin-bottom:0px;
+}
+
+#container footer .expand_info.expanded .info_contents span.subtitle {
+	display:inline;
+}
+
+#container footer .expand_info.collapsed .info_contents {
+	height:22px;
+}
+
+#container footer .expand_info.collapsed .info_contents span.subtitle {
+	display:none;
+}
+
+#app-patients.contents footer .statement {
+    width: 619px;
+}
+
+.bouncetext{
+	position:absolute;
+	top:10px;
+	left:10px;
+	opacity:1;
+	overflow:hidden;
+	transition: opacity 1s, height 1s, top 1s, height 1s;
+	-webkit-transition: opacity 1s, height 1s, top 1s, height 1s;
+}
+
+.bouncetext .bottom{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:inherit;
+	margin:0;
+	padding:0;
+	opacity:0.5;
+	background-position:top left;
+	background-repeat:no-repeat;
+	transition: opacity 1s, height 1s;
+	-webkit-transition: opacity 1s, height 1s;
+}
+
+.bouncetext .top{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:inherit;
+	margin:0;
+	padding:0;
+	opacity:1;
+	background-position:top left;
+	background-repeat:no-repeat;
+	transition: opacity 1s, height 1s;
+	-webkit-transition: opacity 1s, height 1s;
+}
+
+.bouncetext .arrow, .floattext .arrow{
+	top:10px;
+	left:0px;
+	height:25px;
+	width:25px;
+	position:absolute;
+	background-image:url(../app-patients/images/text_arrow.png);
+	background-repeat:no-repeat;
+}
+
+.bouncetext.up .top .arrow, .bouncetext.down .bottom .arrow{
+	background-position:top right;
+}
+
+.bouncetext.down .top .arrow, .bouncetext.up .bottom. arrow, .floattext .arrow {
+	background-position:top left;
+}
+
+.floattext {
+	position:absolute;
+	background-repeat:no-repeat;
+	background-position:top-left;
+}
+
+#text00 {
+	left:365px;
+	top:20px;
+	height:92px;
+	width:281px;
+	background-image:url(../app-patients/images/text00_assess.png);
+	opacity:1;
+}
+
+#text02 {
+	left:365px;
+	top:80px;
+	height:300px;
+	width:400px;
+	background-image:url(../app-patients/images/text02_appropriate.png);
+	display:none;
+	opacity:0;
+}
+
+#text03, #text03.down {
+	left:365px;
+	top:60px;
+	height:345px;
+	width:380px;
+	opacity:0;
+	display:none;
+}
+
+#text03.up {
+	top:10px;
+	height:345px;
+}
+
+#text03 .top{ background-image:url(../app-patients/images/text03a_risk.png); }
+#text03.down .top{ height:280px; opacity:1 }
+#text03.up .top{ height:65px; opacity:0.5 }
+
+#text03 .bottom{ background-image:url(../app-patients/images/text03b_jcv.png); border-top:1px solid #999999; }
+#text03.up .bottom{ height:280px; opacity:1 }
+#text03.down .bottom{ height:65px; opacity:0.5 }
+
+#text04, #text04.down {
+	left:365px;
+	top:100px;
+	height:205px;
+	width:380px;
+	opacity:0;
+	display:none;
+}
+
+#text04.up {
+	top:-10px;
+	height:400px;
+}
+
+#text04 .top{ background-image:url(../app-patients/images/text04a_risk.png); }
+#text04.down .top{ height:150px; opacity:1 }
+#text04.up .top{ height:40px; opacity:0.5 }
+
+#text04 .bottom{ background-image:url(../app-patients/images/text04b_jcv.png); border-top:1px solid #999999; }
+#text04.down .bottom{ height:55px; opacity:0.5 }
+#text04.up .bottom{ height:360px; opacity:1 }
+
+
+#text05 {
+	left:365px;
+	top:80px;
+	height:292px;
+	width:385px;
+	background-image:url(../app-patients/images/text05_tysabri.png);
+	opacity:0;
+	display:none;
+}
+
+.over {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#icon_stack {
+	display:none;}

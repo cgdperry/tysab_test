@@ -1,0 +1,73 @@
+﻿#efficacy-overview.contents {
+	
+}
+
+#efficacy-overview.contents h2 {
+	margin-top:0;
+	padding-top:0;
+	font-size:110%;
+	
+}
+
+#efficacy-overview.contents #percentage_arrows{
+	position:absolute;
+	left:100px;
+	top:30px;
+	width:552px;
+	height:261px;
+	background-image:url(../efficacy-overview/images/arrows.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+#efficacy-overview.contents #percent_callout{
+	position:absolute;
+	left:120px;
+	top:300px;
+	width:532px;
+	height:79px;
+	background-image:url(../efficacy-overview/images/percent_callout.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+#efficacy-overview.contents #text01{
+	position:absolute;
+	left:100px;
+	top:385px;
+	width:541px;
+	height:130px;
+	background-image:url(../efficacy-overview/images/text01.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+#container .contextual_isi{
+	bottom: 145px;
+}
+
+#container footer {
+	position:absolute;
+	bottom:0px;
+	width:760px;
+	height:170px;
+}
+
+#container #efficacy-overview footer .expand_info.collapsed .info_contents {
+    height: 24px;
+}
+
+#container #efficacy-overview footer .expand_info.expanded .info_contents {
+    height: 110px !important;
+}
+
+#container #efficacy-overview footer .expand_info.expanded{
+	border-bottom:none !important;
+}
+
+span.superscript{
+	vertical-align:super;
+	font-size:50% !important;
+	display:inline !important;
+}
